@@ -1,0 +1,162 @@
+.bg-primary {
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+}
+
+body {
+  padding-top: 0px;
+  height: 100vh
+}
+
+.button {
+  border-radius: 25px;
+  background-color: #3030C9CC;
+  color: #fff;
+  border: none;
+}
+
+.button-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  border: 1px solid #747373;
+  background-color: transparent;
+  color: #a8a8a8;
+}
+
+.button-3 {
+  border-radius: 25px;
+  border: 2px solid rgba(2, 117, 249, 0.8);
+  color: rgba(2, 117, 249, 0.8);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button,
+.button-2,
+.button-3 {
+  cursor: pointer;
+  min-width: 80vw;
+  height: 50px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.dark {
+  background-color: #000000;
+  color: #ffffff;
+  height: 100vh;
+
+}
+
+.forgot-password {
+  text-align: center;
+  width: 100%;
+  margin-top: 20px;
+  font-weight: 300;
+}
+
+.google {
+  align-items: center;
+  color: rgba(2, 117, 249, 0.8);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+
+.input {
+  min-width: 80vw;
+  height: 50px;
+  border-radius: 15px;
+  border: 1px solid #747373;
+  background-color: transparent;
+  color: #a8a8a8;
+  padding-left: 20px
+}
+
+.input-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-container input:focus+label,
+.input-container :not(:placeholder-shown)+label {
+  position: absolute;
+  left: 20px;
+  top: 0;
+  background-color: black;
+  font-size: 12px;
+  transform: translateY(-50%);
+  padding: 0 4px;
+}
+
+.light {
+  background-color: #ffffff;
+  color: #000000;
+
+}
+
+.login {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: rgb(248, 36, 71);
+}
+
+.logo h1 {
+  text-rendering: geometricPrecision;
+  font-family: cursive;
+  color: #fff
+}
+
+.or {
+  color: #747373;
+  width: 100%;
+  position: relative;
+  margin: 30px 0;
+
+  hr {
+    border: 1px solid #747373;
+    width: 80%
+  }
+
+  text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #000000;
+    padding: 0 10px
+  }
+}
+
+.placeholder {
+  position: absolute;
+  left: 20px;
+  top: 15px;
+  color: #747373;
+  transition: all 0.2s ease-in-out;
+}
+
+.px-2 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
