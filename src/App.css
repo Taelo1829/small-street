@@ -1,13 +1,17 @@
+.bg-primary {
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+}
+
 body {
   padding-top: 0px;
   height: 100vh
 }
 
 .button {
-  min-width: 80vw;
-  height: 50px;
   border-radius: 25px;
-  background-color: rgba(48, 48, 201, 0.8);
+  background-color: #3030C9CC;
   color: #fff;
   border: none;
 }
@@ -16,17 +20,36 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50px;
   border-radius: 15px;
   border: 1px solid #747373;
   background-color: transparent;
   color: #a8a8a8;
 }
 
+.button-3 {
+  border-radius: 25px;
+  border: 2px solid rgba(2, 117, 249, 0.8);
+  color: rgba(2, 117, 249, 0.8);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button,
+.button-2,
+.button-3 {
+  cursor: pointer;
+  min-width: 80vw;
+  height: 50px;
+}
+
 .button-container {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
+
 
 .dark {
   background-color: #000000;
@@ -43,10 +66,11 @@ body {
 }
 
 .google {
-  display: flex;
-  justify-content: center;
   align-items: center;
   color: rgba(2, 117, 249, 0.8);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
 }
 
 .input {
@@ -70,15 +94,10 @@ body {
   left: 20px;
   top: 0;
   background-color: black;
-  /* move label up */
   font-size: 12px;
-  /* shrink label */
   transform: translateY(-50%);
-  /* optional: adjust if needed */
   padding: 0 4px;
 }
-
-
 
 .light {
   background-color: #ffffff;

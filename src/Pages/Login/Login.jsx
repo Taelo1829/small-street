@@ -1,8 +1,9 @@
 import React from 'react'
 import Logo from './Logo'
 import Input from '../../Components/Input'
-import Button from '../../Components/Button'
+import Button from '../../Components/Buttons/Button'
 import Google from './Google'
+import Button3 from '../../Components/Buttons/Button3'
 
 const Login = () => {
     return (
@@ -18,6 +19,9 @@ const Login = () => {
                 <div className='forgot-password'>
                     <text >Forgot password?</text>
                 </div>
+            </div>
+            <div className='bg-primary'>
+                <Button3 value="Sign up" />
             </div>
         </div>
     )

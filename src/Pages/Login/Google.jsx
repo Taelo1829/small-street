@@ -1,5 +1,5 @@
 import React from 'react'
-import Button2 from '../../Components/Button2'
+import Button2 from '../../Components/Buttons/Button2'
 import GoogleText from './GoogleText'
 
 const Google = () => {
