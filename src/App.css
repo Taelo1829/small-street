@@ -1,3 +1,33 @@
+body {
+  padding-top: 0px;
+  height: 100vh
+}
+
+.button {
+  min-width: 80vw;
+  height: 50px;
+  border-radius: 25px;
+  background-color: rgba(48, 48, 201, 0.8);
+  color: #fff;
+  border: none;
+}
+
+.button-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  border-radius: 15px;
+  border: 1px solid #747373;
+  background-color: transparent;
+  color: #a8a8a8;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
 .dark {
   background-color: #000000;
   color: #ffffff;
@@ -5,15 +35,55 @@
 
 }
 
+.forgot-password {
+  text-align: center;
+  width: 100%;
+  margin-top: 20px;
+  font-weight: 300;
+}
+
+.google {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(2, 117, 249, 0.8);
+}
+
+.input {
+  min-width: 80vw;
+  height: 50px;
+  border-radius: 15px;
+  border: 1px solid #747373;
+  background-color: transparent;
+  color: #a8a8a8;
+  padding-left: 20px
+}
+
+.input-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-container input:focus+label,
+.input-container :not(:placeholder-shown)+label {
+  position: absolute;
+  left: 20px;
+  top: 0;
+  background-color: black;
+  /* move label up */
+  font-size: 12px;
+  /* shrink label */
+  transform: translateY(-50%);
+  /* optional: adjust if needed */
+  padding: 0 4px;
+}
+
+
+
 .light {
   background-color: #ffffff;
   color: #000000;
 
-}
-
-body {
-  padding-top: 0px;
-  height: 100vh
 }
 
 .login {
@@ -21,6 +91,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .logo {
@@ -35,4 +106,38 @@ body {
   text-rendering: geometricPrecision;
   font-family: cursive;
   color: #fff
+}
+
+.or {
+  color: #747373;
+  width: 100%;
+  position: relative;
+  margin: 30px 0;
+
+  hr {
+    border: 1px solid #747373;
+    width: 80%
+  }
+
+  text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #000000;
+    padding: 0 10px
+  }
+}
+
+.placeholder {
+  position: absolute;
+  left: 20px;
+  top: 15px;
+  color: #747373;
+  transition: all 0.2s ease-in-out;
+}
+
+.px-2 {
+  padding-left: 20px;
+  padding-right: 20px;
 }
