@@ -17,7 +17,7 @@ const Login = () => {
                 <Input label="Password" />
                 <Button value="Log in" />
                 <div className='forgot-password'>
-                    <text >Forgot password?</text>
+                    <p >Forgot password?</p>
                 </div>
             </div>
             <div className='bg-primary'>

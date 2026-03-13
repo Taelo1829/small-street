@@ -8,7 +8,7 @@ const Google = () => {
             <Button2 value={<GoogleText />} />
             <div className='or'>
                 <hr />
-                <text>OR</text>
+                <div className='text'>OR</div>
             </div>
         </div>
     )
