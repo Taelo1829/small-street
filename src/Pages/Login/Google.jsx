@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import Button2 from '../../Components/Buttons/Button2'
 import GoogleText from './GoogleText'
 import { useGoogleLogin } from '@react-oauth/google'
-// import { jwtDecode } from "jwt-decode";
 
 const Google = () => {
     const [userData, setUserData] = useState(null);
@@ -30,6 +29,7 @@ const Google = () => {
         }
     }
 
+    console.log(userData)
     return (
         <div>
             <Button2 value={<GoogleText />} onClick={login} />

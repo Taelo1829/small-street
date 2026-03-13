@@ -99,6 +99,14 @@ body {
   padding: 0 4px;
 }
 
+.input-icon {
+  position: absolute;
+  right: 5%;
+  top: 30%;
+  color: #747373;
+  cursor: pointer;
+}
+
 .light {
   background-color: #ffffff;
   color: #000000;

@@ -5,6 +5,7 @@ const GoogleText = () => {
     return (
         <div className='google'>
             <img
+                alt="google"
                 width={20}
                 height={20}
                 src="/Assets/Images/google.png"
