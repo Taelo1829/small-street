@@ -2,24 +2,33 @@ import React, { useEffect, useState } from 'react'
 import Button2 from '../../Components/Buttons/Button2'
 import GoogleText from './GoogleText'
 import { useGoogleLogin } from '@react-oauth/google'
-import { jwtDecode } from "jwt-decode";
+// import { jwtDecode } from "jwt-decode";
 
 const Google = () => {
-    const [tokenResponse, setTokenResponse] = useState({})
+    const [userData, setUserData] = useState(null);
 
     const login = useGoogleLogin({
-        onSuccess: tR => setTokenResponse(tR),
+        onSuccess: tR => getUserData(tR.access_token),
         onError: error => console.log('Login Failed:', error)
     })
 
-    const handleSuccess = (credentialResponse) => {
-        const user = jwtDecode(credentialResponse.credential);
-        console.log(user);
-    };
-
-    useEffect(() => {
-        handleSuccess(tokenResponse)
-    }, [tokenResponse])
+    const getUserData = async (token) => {
+        try {
+            const response = await fetch("https://www.googleapis.com/oauth2/v3/userinfo", {
+                headers: {
+                    Authorization: `Bearer ${token}`
+                }
+            })
+            if (response.ok) {
+                const data = await response.json();
+                setUserData(data);
+            } else {
+                console.error('Failed to fetch user data');
+            }
+        } catch (error) {
+            console.error(error)
+        }
+    }
 
     return (
         <div>
