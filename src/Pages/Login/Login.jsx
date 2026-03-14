@@ -4,11 +4,13 @@ import Input from '../../Components/Input'
 import Button from '../../Components/Buttons/Button'
 import Google from './Google'
 import Button3 from '../../Components/Buttons/Button3'
+import { useNavigate } from 'react-router-dom'
 
 const Login = () => {
     const [username, setUsername] = useState("")
     const [password, setPassword] = useState("")
     const [passwordVisible, setPasswordVisible] = useState(false)
+    const navigate = useNavigate()
 
     const changePasswordVisibility = () => {
         setPasswordVisible(!passwordVisible)
@@ -39,7 +41,7 @@ const Login = () => {
                     type={!passwordVisible ? "password" : ""}
                     value={password} />
                 <Button value="Log in" />
-                <div className='forgot-password'>
+                <div className='forgot-password-button' onClick={() => navigate("/forgot-password")}>
                     <p >Forgot password?</p>
                 </div>
             </div>

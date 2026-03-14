@@ -4,7 +4,7 @@ import GoogleText from './GoogleText'
 import { useGoogleLogin } from '@react-oauth/google'
 import OR from '../../Components/OR'
 
-const Google = () => {
+const Google = ({ reverse }) => {
     const login = useGoogleLogin({
         onSuccess: tR => getUserData(tR.access_token),
         onError: error => console.log('Login Failed:', error)
@@ -29,9 +29,9 @@ const Google = () => {
     }
 
     return (
-        <div>
+        <div className={reverse ? 'reverse' : ""}>
             <Button2 value={<GoogleText />} onClick={login} />
-            <OR />
+            <OR className={reverse ? "reverse" : ""} />
         </div>
     )
 }
