@@ -41,7 +41,7 @@ const Login = () => {
                     type={!passwordVisible ? "password" : ""}
                     value={password} />
                 <Button value="Log in" />
-                <div className='forgot-password' onClick={()=>navigate("/forgot-password")}>
+                <div className='forgot-password-button' onClick={() => navigate("/forgot-password")}>
                     <p >Forgot password?</p>
                 </div>
             </div>

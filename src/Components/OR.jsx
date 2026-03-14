@@ -1,10 +1,10 @@
 import React from 'react'
 
-const OR = () => {
+const OR = ({ className }) => {
     return (
         <div className='or'>
             <hr />
-            <div className='text'>OR</div>
+            <div className={className+' text'}>OR</div>
         </div>
     )
 }

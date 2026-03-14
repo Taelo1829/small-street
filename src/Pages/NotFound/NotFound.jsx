@@ -1,14 +1,13 @@
 import React from 'react'
 import Button from '../../Components/Buttons/Button'
 import { useNavigate } from 'react-router-dom'
+import Back from '../../Components/Back'
 
 const NotFound = () => {
     const navigate = useNavigate()
     return (
         <div className='not-found'>
-            <div className='back' onClick={() => navigate(-1)}>
-                <i className='fa fa-arrow-left'></i>
-            </div>
+            <Back />
             <div>
                 <i className='fa fa-exclamation-circle fa-3x'></i>
             </div>
