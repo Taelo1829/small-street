@@ -46,7 +46,7 @@ const Login = () => {
                 </div>
             </div>
             <div className='bg-primary'>
-                <Button3 value="Sign up" />
+                <Button3 value="Sign up"  onClick={()=>{navigate("/sign-up")}}/>
             </div>
         </div>
     )
